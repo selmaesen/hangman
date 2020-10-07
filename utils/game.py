@@ -31,8 +31,7 @@ class Hangman:
                     
                     if guess == self.good_word[i]:
                         index = i*2   # "*2" because I use a blank after "_" in the format. That makes the index double
-                        self.well_guessed_letters = self.well_guessed_letters[:index] + guess + 
-                        self.well_guessed_letters[index + 1:]    
+                        self.well_guessed_letters = self.well_guessed_letters[:index] + guess + self.well_guessed_letters[index + 1:]    
                         print (self.well_guessed_letters)
                         self.good_answers += 1
                         
